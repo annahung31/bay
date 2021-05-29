@@ -13,15 +13,13 @@
 
           {% for item in page.items %}
           <div class="work-item">
-            <img
-              src="{{ item.image.src | absolute_url }}"
-              alt="{{ item.image.alt }}"
-              class="work-bubble"
-            />
+            <audio controls>  
+              <source src="{{ item.audio.src | absolute_url }}" type="audio/mp3">
+            </audio> 
+
             <span class="work-text">
               <strong>{{ item.title }}</strong>
-              &mdash;
-              {{ item.description }}
+              
             </span>
           </div>
           {% endfor %}

@@ -22,9 +22,6 @@ footer:
     - name: Email
       value: emopia.musicailab@gmail.com
       link: mailto:emopia.musicailab@gmail.com
-  follow:
-    - name: Music AI Lab
-      link: https://musicai.citi.sinica.edu.tw/
 
 # Build settings
 markdown: kramdown

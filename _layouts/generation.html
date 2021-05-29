@@ -17,10 +17,12 @@
               <strong>{{ item.title }}</strong>
               
             </span>
-            <audio controls>  
-              <source src="{{/assets/audio/gen/pre_trained_tf/Q[loop.index0+1]/Q[loop.index0+1]_1.mp3 | absolute_url }}" type="audio/mp3">
-            </audio> 
 
+            {% for i in 4 %}
+              <audio controls>  
+                <source src="{{/assets/audio/gen/[item.model]/Q[loop.index0+1]/Q[loop.index0+1]_1.mp3 | absolute_url }}" type="audio/mp3">
+              </audio> 
+            {% endfor %}  
             
           </div>
           {% endfor %}

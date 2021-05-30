@@ -20,20 +20,12 @@
   
             
 
-
+            {% for i in 1..4 %}
+            <div class="gen-subtitle">{{ i }}</div>
             <audio controls>  
-              <source src="{{ "/assets/audio/gen/model3/Q1/Q1_1.mp3" | absolute_url }}" type="audio/mp3">
+              <source src="{{ "/assets/audio/gen/model3/Q{{ i }}/Q{{ i }}_1.mp3" | absolute_url }}" type="audio/mp3">
             </audio> </br></br>
-
-            <!-- <div class="gen-container">
-              {% for i in 1..4 %}
-              <div class="gen-subtitle">{{ i }}</div> -->
-            <!-- <audio controls>  
-              <source src="/assets/audio/gen/model3/Q{{ i }}/Q{{ i }}_1.mp3" type="audio/mp3">
-            </audio> </br></br> -->
-
-              <!-- {% endfor %}
-            </div> -->
+            {% endfor %}
 
           </div>
           {% endfor %}

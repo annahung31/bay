@@ -17,4 +17,9 @@ profile_picture:
 <blockquote>test </blockquote>
 
 <h3>Cite</h3>
-<code> test </code>
+<pre> @inproceeding{CrossDomainFewShot,
+    author    = {Tseng, Hung-Yu and Lee, Hsin-Ying and Huang, Jia-Bin and Yang, Ming-Hsuan}, 
+    title     = {Cross Domain Few-Shot Classification via Learned Feature-Wise Transformation}, 
+    booktitle = {International Conference on Learning Representations},
+    year      = {2020}
+} </pre>

@@ -12,18 +12,22 @@
           {{ content }}
 
           {% for item in page.items %}
-          <div class="work-item">
-            <span class="work-text">
+          <div class="gen-item">
+            <span class="gen-title">
               <strong>{{ item.title }}</strong> 
               <br>
             </span>
             
-            {% for sample in item.samples %}
+            <!-- <item class="samples">
+              {% for sample in item.samples %}
               <h3>{{ sample.label }}</h3>
               <audio controls>  
                 <source src="{{ sample.src | absolute_url}}" type="audio/mp3">
               </audio> 
-            {% endfor %}
+              {% endfor %}
+
+            </item> -->
+
 
           </div>
           {% endfor %}

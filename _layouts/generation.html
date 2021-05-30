@@ -18,6 +18,11 @@
               <br>
             </span>
             
+            <div class="gen-container">
+            {% for class in item.sub_class %}
+              <h3>{{ class.label }}</h3>
+            {% endfor %}
+            </div>
             <!-- <item class="samples">
               {% for sample in item.samples %}
               <h3>{{ sample.label }}</h3>

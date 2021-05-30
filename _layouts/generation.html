@@ -18,15 +18,22 @@
               <br>
             </span>
   
+            <p id="demo"></p>
+            <script>
+              var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+              var text = "";
+              var i;
+              for (i = 0; i < cars.length; i++) {
+                text += cars[i] + "<br>";
+              }
+              document.getElementById("demo").innerHTML = text;
+            </script>            
+c
             
-
-            {% for i in 1..4 %}
-              <div class="gen-subtitle">{{ i }}</div>
             <!-- <audio controls>  
               <source src="{{ "/assets/audio/gen/model3/Q{{ i }}/Q{{ i }}_1.mp3" | absolute_url }}" type="audio/mp3">
             </audio> </br></br> -->
-            {% endfor %}
-
+            
           </div>
           {% endfor %}
         </div>

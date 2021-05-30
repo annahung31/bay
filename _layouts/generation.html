@@ -17,13 +17,10 @@
               <strong>{{ item.title }}</strong> 
               <br>
             </span>
-            
+  
             <div class="gen-container">
             {% for class in item.sub_class %}
-              <span class="gen-subtitle">
-                <strong>{{ class.label }}</strong> 
-                <br>
-              </span>
+            <h3 class="post-subtitle">{{ class.label }}</h3>
 
 
             {% endfor %}

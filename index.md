@@ -12,14 +12,5 @@ profile_picture:
 <p>
   You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
 
-</p>
 
-<h2>Cite</h2>
-<p>
-cite
-</p>
-
-<h2>Statistics</h2>
-<p>
-statistics
 </p>

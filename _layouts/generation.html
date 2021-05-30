@@ -11,28 +11,35 @@
           <h1 class="page-heading">{{ page.title }}</h1>
           {{ content }}
 
-          {% for item in page.items %}
+          <!-- {% for item in page.items %}
           <div class="gen-item">
             <span class="gen-title">
               <strong>{{ item.title }}</strong> 
               <br>
-            </span>
+            </span> -->
   
             <script>
               var i;
-              for (i = 1; i < 5; i++) {
-              document.write("Q" + i + "<br><br>");
-              var x = document.createElement("AUDIO");
-              x.setAttribute("src","https://annahung31.github.io/bay/assets/audio/gen/model3/Q" + i + "/Q" + i + "_1.mp3");
-              x.setAttribute("controls", "controls");
-              document.body.appendChild(x);
-              document.write("<br>");
+              var models = ['model3', 'model3', 'model3']
+              var display_name = ['Baseline', 'No pre-trained Transformer', 'Pre-trained Transformer']
+
+              for (i = 0; i < models.length; i++){
+                  document.write(display_name[i]+ "<br><br>");
+                  for (i = 1; i < 5; i++) {
+                    document.write("Q" + i + "<br><br>");
+                    var x = document.createElement("AUDIO");
+                    x.setAttribute("src","https://annahung31.github.io/bay/assets/audio/gen/" + models[i] + "/Q" + i + "/Q" + i + "_1.mp3");
+                    x.setAttribute("controls", "controls");
+                    document.body.appendChild(x);
+                    document.write("<br>");
+                }
               }
+
             </script>
 
             
-          </div>
-          {% endfor %}
+          <!-- </div>
+          {% endfor %} -->
         </div>
       </div>
     </div>

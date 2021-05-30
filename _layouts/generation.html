@@ -22,19 +22,12 @@
             {% for class in item.sub_class %}
             <h3 class="post-subtitle">{{ class.label }}</h3>
 
+            <audio controls>  
+              <source src="/assets/audio/gen/model3/Q{{ [loop.index1] }}/Q{{ [loop.index1] }}_1.mp3" type="audio/mp3">
+            </audio> </br></br>
 
             {% endfor %}
             </div>
-            <!-- <item class="samples">
-              {% for sample in item.samples %}
-              <h3>{{ sample.label }}</h3>
-              <audio controls>  
-                <source src="{{ sample.src | absolute_url}}" type="audio/mp3">
-              </audio> 
-              {% endfor %}
-
-            </item> -->
-
 
           </div>
           {% endfor %}

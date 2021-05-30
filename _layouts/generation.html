@@ -18,21 +18,18 @@
               <br>
             </span>
   
-            <p id="demo"></p>
             <script>
-              var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-              var text = "";
               var i;
-              for (i = 0; i < cars.length; i++) {
-                text += cars[i] + "<br>";
+              for (i = 1; i < 5; i++) {
+              document.write("Q" + i + "<br><br>");
+              var x = document.createElement("AUDIO");
+              x.setAttribute("src","/assets/audio/gen/model3/Q" + i + "/Q" + i + "_1.mp3");
+              x.setAttribute("controls", "controls");
+              document.body.appendChild(x);
+              document.write("<br>");
               }
-              document.getElementById("demo").innerHTML = text;
-            </script>            
-c
-            
-            <!-- <audio controls>  
-              <source src="{{ "/assets/audio/gen/model3/Q{{ i }}/Q{{ i }}_1.mp3" | absolute_url }}" type="audio/mp3">
-            </audio> </br></br> -->
+            </script>
+
             
           </div>
           {% endfor %}

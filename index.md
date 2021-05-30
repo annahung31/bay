@@ -15,3 +15,6 @@ profile_picture:
 
 <h3>Cite</h3>
 <blockquote>test </blockquote>
+
+<h3>Cite</h3>
+<code> test </code>

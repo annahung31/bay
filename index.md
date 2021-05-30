@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: Dataset
 profile_picture:
   src: /assets/img/profile-pic.jpg
   alt: website picture
@@ -11,4 +11,14 @@ profile_picture:
 
 <p>
   You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
+
+
+## Dataset introduction
+
+
+## Cite
+
+## How to get the dataset
+
+## Statistics
 </p>

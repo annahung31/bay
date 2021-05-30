@@ -20,7 +20,12 @@
             
             <div class="gen-container">
             {% for class in item.sub_class %}
-              <h3>{{ class.label }}</h3>
+              <span class="gen-subtitle">
+                <strong>{{ class.label }}</strong> 
+                <br>
+              </span>
+
+
             {% endfor %}
             </div>
             <!-- <item class="samples">

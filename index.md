@@ -12,13 +12,14 @@ profile_picture:
 <p>
   You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
 
+</p>
 
-## Dataset introduction
+<h2>Cite</h2>
+<p>
+cite
+</p>
 
-
-## Cite
-
-## How to get the dataset
-
-## Statistics
+<h2>Statistics</h2>
+<p>
+statistics
 </p>

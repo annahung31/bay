@@ -18,24 +18,24 @@
               <br>
             </span> -->
 
-            <script>
-              var i;
-              var models = ['model3', 'model3', 'model3']
-              var display_name = ['Baseline', 'No pre-trained Transformer', 'Pre-trained Transformer']
+          <script>
+            var i;
+            var models = ['model3', 'model3', 'model3']
+            var display_name = ['Baseline', 'No pre-trained Transformer', 'Pre-trained Transformer']
 
-              for (m = 0; m < models.length; m++){
-                  // document.write(display_name[m]+ "<br><br>");
-                  for (i = 1; i < 5; i++) {
-                    // document.write("Q" + i + "<br><br>");
-                    var x = document.createElement("AUDIO");
-                    x.setAttribute("src","https://annahung31.github.io/bay/assets/audio/gen/" + models[m] + "/Q" + i + "/Q" + i + "_1.mp3");
-                    x.setAttribute("controls", "controls");
-                    document.body.appendChild(x);
-                    document.write("<br>");
-                }
+            for (m = 0; m < models.length; m++){
+                document.write(display_name[m]+ "<br><br>");
+                for (i = 1; i < 5; i++) {
+                  document.write("Q" + i + "<br><br>");
+                  var x = document.createElement("AUDIO");
+                  x.setAttribute("src","https://annahung31.github.io/bay/assets/audio/gen/" + models[m] + "/Q" + i + "/Q" + i + "_1.mp3");
+                  x.setAttribute("controls", "controls");
+                  document.body.appendChild(x);
+                  document.write("<br>");
               }
+            }
 
-            </script>
+          </script>
 
             
           <!-- </div>
